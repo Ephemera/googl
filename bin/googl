@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby
 
+# Usage : googl url
+
 require 'googl'
 
 ARGV.each do |url|
     u = Googl.shorten(url)
     puts u.short_url
 end
-
